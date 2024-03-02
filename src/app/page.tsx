@@ -4,7 +4,7 @@ import { signIn } from "next-auth/react";
 
 function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-slate-100 text-black">
+    <div className="flex flex-col items-center justify-center h-screen">
       <h1 className="text-4xl font-bold mb-2 text-center">
         Welcome to <br /> <span className="text-6xl">Gambit Challenge</span>
       </h1>
