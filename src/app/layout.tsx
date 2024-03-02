@@ -1,30 +1,28 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Navbar from './components/Navbar'
-import AuthProvider from './context/AuthProvider'
+import "./globals.css";
+import { Inter } from "next/font/google";
+import Navbar from "./components/Navbar";
+import AuthProvider from "./context/AuthProvider";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Atea Gambit challenge',
-  description: 'Learn NextAuth.js by Dave Gray',
-}
+  title: "Atea Gambit challenge",
+  description: "Learn NextAuth.js by Dave Gray",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <AuthProvider>
+    <AuthProvider>
+      <html lang="en">
+        <body className={inter.className} >
           <Navbar />
-          <main className="flex-grow">
-            {children}
-          </main>
-        </AuthProvider>
-      </body>
-    </html>
-  )
+          <main className="flex-grow bg-white text-black">{children}</main>
+        </body>
+      </html>
+    </AuthProvider>
+  );
 }

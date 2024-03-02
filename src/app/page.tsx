@@ -1,11 +1,32 @@
+"use client";
+
+import { signIn } from "next-auth/react";
+
 function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-white text-black">
+    <div className="flex flex-col items-center justify-center h-screen bg-slate-100 text-black">
       <h1 className="text-4xl font-bold mb-2 text-center">
         Welcome to <br /> <span className="text-6xl">Gambit Challenge</span>
       </h1>
       <p className="text-xl mb-5">Sign in to see the data</p>
-      <div className="flex flex-row space-x-3 "></div>
+      <div className="flex gap-10 mt-10">
+        <button
+          className="bg-zinc-900 text-white py-2 px-5 rounded-md space-x-4 "
+          onClick={() =>
+            signIn("google", { callbackUrl: "http://localhost:3000/data" })
+          }
+        >
+          Sign in with Google
+        </button>
+        <button
+          className="bg-zinc-900 text-white py-2 px-5 rounded-md space-x-4 "
+          onClick={() =>
+            signIn("github", { callbackUrl: "http://localhost:3000/data" })
+          }
+        >
+          Sign in with Github
+        </button>
+      </div>
     </div>
   );
 }
