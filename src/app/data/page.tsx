@@ -2,7 +2,7 @@ import { fetchData } from "../lib/fetchData";
 import { groupAndProcessRegisters } from "../lib/dataProcessing";
 import DataTable from "../components/DataTable";
 
-async function MyPage() {
+async function DataPage() {
   const dataEntries = await fetchData();
 
   const processed = groupAndProcessRegisters(dataEntries);
@@ -10,4 +10,4 @@ async function MyPage() {
   return <DataTable data={processed} />;
 }
 
-export default MyPage;
+export default DataPage;

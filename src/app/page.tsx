@@ -13,7 +13,7 @@ function Home() {
         <button
           className="bg-zinc-900 text-white py-2 px-5 rounded-md space-x-4 "
           onClick={() =>
-            signIn("google", { callbackUrl: "http://localhost:3000/data" })
+            signIn("google", { callbackUrl: "https://gambit-atea.vercel.app/data" })
           }
         >
           Sign in with Google
@@ -21,7 +21,7 @@ function Home() {
         <button
           className="bg-zinc-900 text-white py-2 px-5 rounded-md space-x-4 "
           onClick={() =>
-            signIn("github", { callbackUrl: "http://localhost:3000/data" })
+            signIn("github", { callbackUrl: "https://gambit-atea.vercel.app/data" })
           }
         >
           Sign in with Github
