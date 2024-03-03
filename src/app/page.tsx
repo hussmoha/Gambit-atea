@@ -1,4 +1,4 @@
-
+"use client"
 
 import { signIn } from "next-auth/react";
 
@@ -13,7 +13,9 @@ function Home() {
         <button
           className="bg-zinc-900 text-white py-2 px-5 rounded-md space-x-4 "
           onClick={() =>
-            signIn("google", { callbackUrl: "https://gambit-atea.vercel.app/data" })
+            signIn("google", {
+              callbackUrl: "https://gambit-atea.vercel.app/data",
+            })
           }
         >
           Sign in with Google
@@ -21,7 +23,9 @@ function Home() {
         <button
           className="bg-zinc-900 text-white py-2 px-5 rounded-md space-x-4 "
           onClick={() =>
-            signIn("github", { callbackUrl: "https://gambit-atea.vercel.app/data" })
+            signIn("github", {
+              callbackUrl: "https://gambit-atea.vercel.app/data",
+            })
           }
         >
           Sign in with Github
