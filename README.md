@@ -1,6 +1,6 @@
 # Gambit Challenge - Next.js UI for TUF-2000M Data Visualization 
 
-Welcome to the repository for the Gambit Challenge! This project aims to present a user-friendly interface for visualizing data from the TUF-2000M ultrasonic energy meter. Utilizing the power of Next.js, we've created a seamless experience for users to interact with the data feed from the TUF-2000M meter.
+Welcome to the repository for the Gambit Challenge! This project aims to present a user-friendly interface for visualizing data from the TUF-2000M ultrasonic energy meter.
 
 Problem Description
 The TUF-2000M is an ultrasonic energy meter equipped with a Modbus interface. The documentation for this interface can be found in docs/tuf-2000m.pdf. The meter provides a live text feed, detailing the time of reading followed by the first 100 register values.
