@@ -2,10 +2,10 @@
 
 Welcome to the repository for the Gambit Challenge! This project aims to present a user-friendly interface for visualizing data from the TUF-2000M ultrasonic energy meter.
 
-Problem Description
+### Problem Description
 The TUF-2000M is an ultrasonic energy meter equipped with a Modbus interface. The documentation for this interface can be found in docs/tuf-2000m.pdf. The meter provides a live text feed, detailing the time of reading followed by the first 100 register values.
 
-Task - Option 2
+###Task - Option 2
 The chosen task for this project is Option 2, which involves creating a UI for displaying the data. This solution focuses on a modern, user-friendly interface, ensuring an intuitive user experience.
 
 ### Features
